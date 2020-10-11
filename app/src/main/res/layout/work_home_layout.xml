@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.storemanager.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/editData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改数据"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/outStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editData"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:text="出库记录"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/intoStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/outStore"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:text="入库记录"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/listData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editData"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="查询数据"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/managerData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listData"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="程序管理"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

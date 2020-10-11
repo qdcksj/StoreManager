@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<com.example.storemanager.TitleLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="颜色管理"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="名称："
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/insertColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="输入色母号及颜色"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期："
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/yearData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:spinnerMode="dialog"/>
+    <TextView
+        android:id="@+id/tv_Spiner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="left"
+        android:textColor="#000"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年"
+        android:textSize="20sp"/>
+    <Spinner
+        android:id="@+id/monthData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:spinnerMode="dialog"/>
+
+    <TextView
+        android:id="@+id/tv_Spiner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="17sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月"
+        android:textSize="20sp"/>
+    <Spinner
+        android:id="@+id/dayData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:spinnerMode="dialog" />
+    <TextView
+        android:id="@+id/tv_Spiner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日"
+        android:layout_weight="1"
+        android:textSize="20sp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/addColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="保存"/>
+    <Button
+        android:id="@+id/editDelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="删除单个颜色"/>
+    <Button
+        android:id="@+id/listButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="颜色名称浏览"/>
+    <Button
+        android:id="@+id/delButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="删除所有数据"/>
+</LinearLayout>

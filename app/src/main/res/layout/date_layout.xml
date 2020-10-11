@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日         期："
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/yearData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_Dialog"
+            android:gravity="center"
+            android:spinnerMode="dialog"/>
+        <TextView
+            android:id="@+id/yearSpiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/tv_Dialog"
+            android:gravity="left"
+            android:textColor="#000"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年"
+            android:textSize="20sp"/>
+        <Spinner
+            android:id="@+id/monthData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_Dialog"
+            android:gravity="center"
+            android:spinnerMode="dialog"/>
+
+        <TextView
+            android:id="@+id/monthSpiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/tv_Dialog"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textSize="20sp"/>
+        <Spinner
+            android:id="@+id/dayData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_Dialog"
+            android:gravity="center"
+            android:spinnerMode="dialog"/>
+        <TextView
+            android:id="@+id/daySpiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/tv_Dialog"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
